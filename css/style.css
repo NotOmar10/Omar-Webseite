@@ -1,0 +1,131 @@
+/* 🌑 Allgemeines Dark-Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🏆 Header Styling */
+header {
+    padding: 20px;
+}
+
+h1 {
+    color: gold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 🎭 Clan-Logo */
+.clan-logo {
+    width: 220px;
+    margin-top: 10px;
+}
+
+/* 🏅 Hauptcontainer */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🎮 Spieler-Karten */
+.player-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.player-card {
+    background: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.8);
+}
+
+/* 🎭 Spieler-Profilbild */
+.player-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid gold;
+    margin-bottom: 10px;
+}
+
+/* 📝 Spielername */
+.player-card h3 {
+    color: gold;
+    font-size: 1.4rem;
+}
+
+/* 📞 Telefonnummer */
+.phone {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* 🎥 TikTok-Link */
+.player-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.player-card a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 🔗 Discord-Button */
+.discord-section {
+    margin-top: 30px;
+}
+
+.discord-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.discord-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* 📱 Responsive Anpassung für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .player-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card {
+        width: 90%;
+    }
+}
